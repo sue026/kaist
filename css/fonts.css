@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 한글 SUIT */
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SUIT';
+  src: url(../fonts/SUIT-Regular.woff2);
+  font-weight: 400;
+}
+
+
+/* 영문 Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-ExtraBold.woff2);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.woff2);
+  font-weight: 500;
+}
