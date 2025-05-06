@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0; padding: 0;
+  font: inherit; color: inherit;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+}
+img, video, iframe {
+  display: block;
+}
+input, textarea, select, button {
+  outline: none;border: none;
+}
+button {
+  background: none;cursor: pointer;
+}
+ol, ul, li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}

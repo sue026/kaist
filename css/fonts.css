@@ -1,0 +1,45 @@
+@charset "urf-8";
+
+/* 아이콘 */
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@2.3.3/xeicon.css");
+
+/* 한글폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+  font-family: 'suit';
+  src: url(/fonts/SUIT-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'suit';
+  src: url(/fonts/SUIT-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'suit';
+  src: url(/fonts/SUIT-Medium.woff2);
+  font-weight: 500;
+}
+
+/* 영문폰트 */
+@font-face {
+  font-family: montserrat;
+  font-weight: 700;
+  src: url(/fonts/Montserrat-Bold.woff2);
+}
+@font-face {
+  font-family: montserrat;
+  font-weight: 800;
+  src: url(/fonts/Montserrat-ExtraBold.woff2);
+}
+@font-face {
+  font-family: montserrat;
+  font-weight: 500;
+  src: url(/fonts/Montserrat-Medium.woff2);
+}
+
+
+
+
+
