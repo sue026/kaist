@@ -6,19 +6,22 @@
 
 /* 한글폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 @font-face {
   font-family: 'suit';
-  src: url(/fonts/SUIT-Regular.woff2);
+  src: url(../fonts/SUIT-Regular.woff2);
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'suit';
-  src: url(/fonts/SUIT-Bold.woff2);
+  src: url(../fonts/SUIT-Bold.woff2);
   font-weight: 700;
 }
+
 @font-face {
   font-family: 'suit';
-  src: url(/fonts/SUIT-Medium.woff2);
+  src: url(../fonts/SUIT-Medium.woff2);
   font-weight: 500;
 }
 
@@ -26,20 +29,17 @@
 @font-face {
   font-family: montserrat;
   font-weight: 700;
-  src: url(/fonts/Montserrat-Bold.woff2);
+  src: url(../fonts/Montserrat-Bold.woff2);
 }
+
 @font-face {
   font-family: montserrat;
   font-weight: 800;
-  src: url(/fonts/Montserrat-ExtraBold.woff2);
+  src: url(../fonts/Montserrat-ExtraBold.woff2);
 }
+
 @font-face {
   font-family: montserrat;
   font-weight: 500;
-  src: url(/fonts/Montserrat-Medium.woff2);
+  src: url(../fonts/Montserrat-Medium.woff2);
 }
-
-
-
-
-

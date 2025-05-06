@@ -1,48 +1,193 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>녹색성장지속가능대학원</title>
-    <!-- favicon -->
-    <link rel="icon" href="https://gggs.kaist.ac.kr/favicon.ico" />
 
-    <!-- Style Sheet -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/css/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>녹색성장지속가능대학원</title>
+  <!-- favicon -->
+  <link rel="icon" href="https://gggs.kaist.ac.kr/favicon.ico" />
 
-    <!-- Java Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-    <script src="/js/main.js" defer></script>
-  </head>
-  <body>
-    <div class="skip_nav">
-      <a href="#gnb">메뉴로 이동</a>
-      <a href="#main_content">본문으로 이동</a>
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="skip_nav">
+    <a href="#gnb">메뉴로 이동</a>
+    <a href="#main_content">본문으로 이동</a>
+  </div>
+  <div class="popup_wrap">
+    <img src="./img/main/popup.jpg" alt="" />
+    <div class="popup_btn">
+      <input type="checkbox" id="popup_cookie" />
+      <label for="popup_cookie">오늘하루그만보기</label>
+      <button><i class="ri-close-fill"></i></button>
     </div>
-    <div class="popup_wrap">
-      <img src="/img/main/popup.jpg" alt="" />
-      <div class="popup_btn">
-        <input type="checkbox" id="popup_cookie" />
-        <label for="popup_cookie">오늘하루그만보기</label>
-        <button><i class="ri-close-fill"></i></button>
-      </div>
-    </div>
-    <div id="wrap">
-      <header id="header">
-        <div class="container">
-          <h1>
-            <a href="/"><span class="blind">녹색성장지속가능대학원</span></a>
-          </h1>
-          <nav id="gnb">
-            <!-- ul.dep1>li*6>a[href="#"]+ul.dep2>li>a[href="#"] -->
+  </div>
+  <div id="wrap">
+    <header id="header">
+      <div class="container">
+        <h1>
+          <a href="/"><span class="blind">녹색성장지속가능대학원</span></a>
+        </h1>
+        <nav id="gnb">
+          <!-- ul.dep1>li*6>a[href="#"]+ul.dep2>li>a[href="#"] -->
+          <ul class="dep1">
+            <li>
+              <a href="#">대학원 소개</a>
+              <ul class="dep2">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">미션 및 비전</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">구성원</a>
+              <ul class="dep2">
+                <li>
+                  <a href="#">교수안내</a>
+                  <ul class="dep3">
+                    <li><a href="#">전체 교수진</a></li>
+                    <li><a href="#">탄소중립이행평가</a></li>
+                    <li><a href="#">탄소중립기술시스템</a></li>
+                    <li><a href="#">녹색에너지시스템</a></li>
+                    <li><a href="#">자원순화기술시스템</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">재학생</a>
+                  <ul class="dep3">
+                    <li><a href="#">석사과정</a></li>
+                    <li><a href="#">박사과정</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">졸업생</a></li>
+                <li><a href="#">사무실</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">입학</a>
+              <ul class="dep2">
+                <li>
+                  <a href="#">프로그램</a>
+                  <ul class="dep3">
+                    <li><a href="#">석사과정</a></li>
+                    <li><a href="#">박사과정</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">교육</a>
+              <ul class="dep2">
+                <li><a href="#">개요</a></li>
+                <li>
+                  <a href="#">이수요건</a>
+                  <ul class="dep3">
+                    <li><a href="#">석사과정</a></li>
+                    <li><a href="#">박사과정</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">집중분야 이수제도</a></li>
+                <li>
+                  <a href="#">교과목 일람표</a>
+                  <ul class="dep3">
+                    <li><a href="#">전체교과목</a></li>
+                    <li><a href="#">현재학기 개설교과목</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">연구</a>
+              <ul class="dep2">
+                <li><a href="#">개요</a></li>
+                <li>
+                  <a href="#">분야</a>
+                  <ul class="dep3">
+                    <li><a href="#">탄소중립이행평가</a></li>
+                    <li><a href="#">탄소중립기술시스템</a></li>
+                    <li><a href="#">녹색에너지시스템</a></li>
+                    <li><a href="#">자원순환기술시스템</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">성과</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="dep2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">Quarterly</a></li>
+                <li><a href="#">미디어</a></li>
+                <li><a href="#">학술정보</a></li>
+                <li><a href="#">교원채용</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_util">
+          <div class="lang_wrap">
+            <button>KOR <i class="ri-arrow-down-s-fill"></i></button>
+            <ul>
+              <li><a href="#">KOR</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
+          </div>
+          <div class="search_wrap">
+            <button>
+              <i class="ri-search-line"></i>
+              <span class="blind">검색창열기</span>
+            </button>
+          </div>
+          <div class="allmenu_wrap">
+            <button class="btn_allmenu_open">
+              <i class="ri-menu-3-line"></i>
+              <span class="blind">전체메뉴 보기</span>
+            </button>
+          </div>
+        </div>
+        <div class="search_box">
+          <h2>SEARCH</h2>
+          <form>
+            <input type="text" placeholder="필요한 정보를 검색해보세요." />
+            <button type="submit">
+              <i class="ri-search-line"></i>
+              <span class="blind">검색하기</span>
+            </button>
+          </form>
+        </div>
+        <div class="allmenu_popup">
+          <a href="#" class="allmenu_logo">
+            <img src="./img/common/en_logo.svg" alt="gggs kaist" />
+          </a>
+          <button class="btn_allmenu_close">
+            <i class="ri-close-fill"></i>
+            <span class="blind">전체메뉴닫기</span>
+          </button>
+          <div class="allmenu_left">
+            <div class="content">
+              <dl>
+                <dt>TEL</dt>
+                <dd>042-350-4162~4</dd>
+                <dt>E-mail</dt>
+                <dd>gggs@kaist.ac.kr</dd>
+              </dl>
+              <p>&copy; 2023. KAIST GGGS. ALL RIGHT RESERVED.</p>
+            </div>
+          </div>
+          <div class="allmenu_right">
             <ul class="dep1">
               <li>
                 <a href="#">대학원 소개</a>
@@ -137,1140 +282,752 @@
                 </ul>
               </li>
             </ul>
-          </nav>
-          <div class="header_util">
-            <div class="lang_wrap">
-              <button>KOR <i class="ri-arrow-down-s-fill"></i></button>
-              <ul>
-                <li><a href="#">KOR</a></li>
-                <li><a href="#">ENG</a></li>
-              </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main_content">
+      <div class="main_visual">
+        <div class="main_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/main/main_slide01.jpg" alt="" />
             </div>
-            <div class="search_wrap">
-              <button>
-                <i class="ri-search-line"></i>
-                <span class="blind">검색창열기</span>
-              </button>
+            <div class="swiper-slide">
+              <img src="./img/main/main_slide02.jpg" alt="" />
             </div>
-            <div class="allmenu_wrap">
-              <button class="btn_allmenu_open">
-                <i class="ri-menu-3-line"></i>
-                <span class="blind">전체메뉴 보기</span>
-              </button>
+            <div class="swiper-slide">
+              <img src="./img/main/main_slide03.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/main/main_slide04.jpg" alt="" />
             </div>
           </div>
-          <div class="search_box">
-            <h2>SEARCH</h2>
-            <form>
-              <input type="text" placeholder="필요한 정보를 검색해보세요." />
-              <button type="submit">
-                <i class="ri-search-line"></i>
-                <span class="blind">검색하기</span>
-              </button>
-            </form>
-          </div>
-          <div class="allmenu_popup">
-            <a href="#" class="allmenu_logo">
-              <img src="/img/common/en_logo.svg" alt="gggs kaist" />
-            </a>
-            <button class="btn_allmenu_close">
-              <i class="ri-close-fill"></i>
-              <span class="blind">전체메뉴닫기</span>
-            </button>
-            <div class="allmenu_left">
-              <div class="content">
-                <dl>
-                  <dt>TEL</dt>
-                  <dd>042-350-4162~4</dd>
-                  <dt>E-mail</dt>
-                  <dd>gggs@kaist.ac.kr</dd>
-                </dl>
-                <p>&copy; 2023. KAIST GGGS. ALL RIGHT RESERVED.</p>
+          <div class="swiper_content">
+            <strong>
+              KAIST GRADUATE SCHOOL OF <br />GREEN GROWTH & SUSTAINABILITY
+            </strong>
+            <div class="swiper_navigation_wrap">
+              <div class="btn_prev btn_main">
+                <img src="./img/main/main_arrow.svg" alt="" />
+              </div>
+              <div class="btn_next btn_main">
+                <img src="./img/main/main_arrow.svg" alt="" />
+              </div>
+              <div class="progress">
+                <div class="bar"></div>
               </div>
             </div>
-            <div class="allmenu_right">
-              <ul class="dep1">
-                <li>
-                  <a href="#">대학원 소개</a>
-                  <ul class="dep2">
-                    <li><a href="#">인사말</a></li>
-                    <li><a href="#">미션 및 비전</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">오시는길</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">구성원</a>
-                  <ul class="dep2">
-                    <li>
-                      <a href="#">교수안내</a>
-                      <ul class="dep3">
-                        <li><a href="#">전체 교수진</a></li>
-                        <li><a href="#">탄소중립이행평가</a></li>
-                        <li><a href="#">탄소중립기술시스템</a></li>
-                        <li><a href="#">녹색에너지시스템</a></li>
-                        <li><a href="#">자원순화기술시스템</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">재학생</a>
-                      <ul class="dep3">
-                        <li><a href="#">석사과정</a></li>
-                        <li><a href="#">박사과정</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">졸업생</a></li>
-                    <li><a href="#">사무실</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">입학</a>
-                  <ul class="dep2">
-                    <li>
-                      <a href="#">프로그램</a>
-                      <ul class="dep3">
-                        <li><a href="#">석사과정</a></li>
-                        <li><a href="#">박사과정</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">교육</a>
-                  <ul class="dep2">
-                    <li><a href="#">개요</a></li>
-                    <li>
-                      <a href="#">이수요건</a>
-                      <ul class="dep3">
-                        <li><a href="#">석사과정</a></li>
-                        <li><a href="#">박사과정</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">집중분야 이수제도</a></li>
-                    <li>
-                      <a href="#">교과목 일람표</a>
-                      <ul class="dep3">
-                        <li><a href="#">전체교과목</a></li>
-                        <li><a href="#">현재학기 개설교과목</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">연구</a>
-                  <ul class="dep2">
-                    <li><a href="#">개요</a></li>
-                    <li>
-                      <a href="#">분야</a>
-                      <ul class="dep3">
-                        <li><a href="#">탄소중립이행평가</a></li>
-                        <li><a href="#">탄소중립기술시스템</a></li>
-                        <li><a href="#">녹색에너지시스템</a></li>
-                        <li><a href="#">자원순환기술시스템</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">성과</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">커뮤니티</a>
-                  <ul class="dep2">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">Quarterly</a></li>
-                    <li><a href="#">미디어</a></li>
-                    <li><a href="#">학술정보</a></li>
-                    <li><a href="#">교원채용</a></li>
-                  </ul>
-                </li>
-              </ul>
+            <span>Combining Science & Technology <br />
+              with Policy and Finance to Achieve Carbon Neutrality</span>
+            <div class="swiper_controls_wrap">
+              <div class="swiper-pagination"></div>
+              <div class="swiper_auto_controls">
+                <button class="auto_play">
+                  <i class="ri-play-circle-fill"></i>
+                </button>
+                <button class="auto_stop">
+                  <i class="ri-pause-circle-fill"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </header>
-      <main id="main_content">
-        <div class="main_visual">
-          <div class="main_swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="/img/main/main_slide01.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/img/main/main_slide02.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/img/main/main_slide03.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/img/main/main_slide04.jpg" alt="" />
-              </div>
-            </div>
-            <div class="swiper_content">
-              <strong>
-                KAIST GRADUATE SCHOOL OF <br />GREEN GROWTH & SUSTAINABILITY
-              </strong>
-              <div class="swiper_navigation_wrap">
-                <div class="btn_prev btn_main">
-                  <img src="/img/main/main_arrow.svg" alt="" />
-                </div>
-                <div class="btn_next btn_main">
-                  <img src="/img/main/main_arrow.svg" alt="" />
-                </div>
-                <div class="progress">
-                  <div class="bar"></div>
-                </div>
-              </div>
-              <span
-                >Combining Science & Technology <br />
-                with Policy and Finance to Achieve Carbon Neutrality</span
-              >
-              <div class="swiper_controls_wrap">
-                <div class="swiper-pagination"></div>
-                <div class="swiper_auto_controls">
-                  <button class="auto_play">
-                    <i class="ri-play-circle-fill"></i>
-                  </button>
-                  <button class="auto_stop">
-                    <i class="ri-pause-circle-fill"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div class="quickmenu_wrap">
+          <a href="#"><img src="./img/main/main_tab_icon01.png" alt="" />입학안내</a>
+          <a href="#"><img src="./img/main/main_tab_icon02.png" alt="" />교육과정</a>
+          <a href="#"><img src="./img/main/main_tab_icon03.png" alt="" />연구소개</a>
+          <a href="#"><img src="./img/main/main_tab_icon04.png" alt="" />문의하기</a>
+        </div>
+      </div>
+      <section class="only_one_earth_wrap">
+        <div class="container">
+          <hgroup>
+            <h2><span class="blind">Only One Earth</span></h2>
+            <p>
+              과학기술에 정책과 금융을 더해
+              <strong class="strong_txt">탄소중립</strong>을 실현합니다.
+            </p>
+          </hgroup>
+
+          <div class="pc_img">
+            <img src="./img/main/sec02_img.png" alt="" />
           </div>
-          <div class="quickmenu_wrap">
-            <a href="#"
-              ><img src="/img/main/main_tab_icon01.png" alt="" />입학안내</a
-            >
-            <a href="#"
-              ><img src="/img/main/main_tab_icon02.png" alt="" />교육과정</a
-            >
-            <a href="#"
-              ><img src="/img/main/main_tab_icon03.png" alt="" />연구소개</a
-            >
-            <a href="#"
-              ><img src="/img/main/main_tab_icon04.png" alt="" />문의하기</a
-            >
+          <div class="mo_img">
+            <img src="./img/main/sec02_img01.png" alt="" />
+            <img src="./img/main/sec02_img02.png" alt="" />
+            <img src="./img/main/sec02_img03.png" alt="" />
           </div>
         </div>
-        <section class="only_one_earth_wrap">
-          <div class="container">
+      </section>
+      <section class="program_wrap">
+        <div class="container">
+          <div class="grid_box">
             <hgroup>
-              <h2><span class="blind">Only One Earth</span></h2>
+              <h2>PROGRAM</h2>
               <p>
-                과학기술에 정책과 금융을 더해
-                <strong class="strong_txt">탄소중립</strong>을 실현합니다.
+                <span class="strong_txt">KAIST GGGS</span>에서는 녹색성장과
+                지속가능성 문제해결을 위해 <br class="pc" />
+                탄소중립기후기술 및 정책·금융에 대한 <br class="mo" />
+                통섭적인 이해를 갖춘 <br class="pc" />국가 핵심인재를
+                양성합니다.
               </p>
             </hgroup>
-
-            <div class="pc_img">
-              <img src="/img/main/sec02_img.png" alt="" />
+            <a href="#">
+              <img src="./img/main/sec03_tab01.png" alt="" />
+              <span>박사과정</span>
+            </a>
+            <a href="#">
+              <img src="./img/main/sec03_tab02.png" alt="" />
+              <span>군학프로그램</span>
+            </a>
+            <a href="#">
+              <img src="./img/main/sec03_tab03.png" alt="" />
+              <span>석사과정</span>
+            </a>
+            <div class="logo_item">
+              <img src="./img/main/sec03_thumb.png" alt="" />
             </div>
-            <div class="mo_img">
-              <img src="/img/main/sec02_img01.png" alt="" />
-              <img src="/img/main/sec02_img02.png" alt="" />
-              <img src="/img/main/sec02_img03.png" alt="" />
-            </div>
+            <a href="#">
+              <img src="./img/main/sec03_tab04.png" alt="" />
+              <span>외국인 전형</span>
+            </a>
           </div>
-        </section>
-        <section class="program_wrap">
-          <div class="container">
-            <div class="grid_box">
-              <hgroup>
-                <h2>PROGRAM</h2>
-                <p>
-                  <span class="strong_txt">KAIST GGGS</span>에서는 녹색성장과
-                  지속가능성 문제해결을 위해 <br class="pc" />
-                  탄소중립기후기술 및 정책·금융에 대한 <br class="mo" />
-                  통섭적인 이해를 갖춘 <br class="pc" />국가 핵심인재를
-                  양성합니다.
-                </p>
-              </hgroup>
-              <a href="#">
-                <img src="/img/main/sec03_tab01.png" alt="" />
-                <span>박사과정</span>
-              </a>
-              <a href="#">
-                <img src="/img/main/sec03_tab02.png" alt="" />
-                <span>군학프로그램</span>
-              </a>
-              <a href="#">
-                <img src="/img/main/sec03_tab03.png" alt="" />
-                <span>석사과정</span>
-              </a>
-              <div class="logo_item">
-                <img src="/img/main/sec03_thumb.png" alt="" />
+        </div>
+      </section>
+      <section class="faculty_wrap">
+        <hgroup>
+          <h2>FACULTY</h2>
+          <p>
+            우리는 탄소중립 난제를 해결하고 녹색성장을 이끌기 위해 모였습니다.
+          </p>
+          <a href="#" class="main_link">교수진 안내</a>
+        </hgroup>
+        <div class="faculty_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_01_crop_auto_fix_600_853.52.png" alt="" />
               </div>
-              <a href="#">
-                <img src="/img/main/sec03_tab04.png" alt="" />
-                <span>외국인 전형</span>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="faculty_wrap">
-          <hgroup>
-            <h2>FACULTY</h2>
-            <p>
-              우리는 탄소중립 난제를 해결하고 녹색성장을 이끌기 위해 모였습니다.
-            </p>
-            <a href="#" class="main_link">교수진 안내</a>
-          </hgroup>
-          <div class="faculty_swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_01_crop_auto_fix_600_853.52.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_02_crop_auto_fix_600_736.89.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_04_crop_auto_fix_600_810.28.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_05_crop_auto_fix_600_743.04.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_06_crop_auto_fix_600_857.28.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_07_crop_auto_fix_600_810.28.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_08_crop_auto_fix_600_859.95.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_09_crop_auto_fix_600_744.48.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_01_crop_auto_fix_600_853.52.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_02_crop_auto_fix_600_736.89.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_09_crop_auto_fix_600_744.48.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_08_crop_auto_fix_600_859.95.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_07_crop_auto_fix_600_810.28.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_06_crop_auto_fix_600_857.28.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_05_crop_auto_fix_600_743.04.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_01_crop_auto_fix_600_853.52.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_02_crop_auto_fix_600_736.89.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_04_crop_auto_fix_600_810.28.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_02_crop_auto_fix_600_736.89.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_01_crop_auto_fix_600_853.52.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">인소영 교수</span>
-                <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_02_crop_auto_fix_600_736.89.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">정희태 교수</span>
-                <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
-              <li class="swiper-slide">
-                <div class="thumb_img">
-                  <img
-                    src="/img/main/faculty_03_crop_auto_fix_600_804.64.png"
-                    alt=""
-                  />
-                </div>
-                <span class="name">김인희 교수</span>
-                <span class="desc"
-                  >지속가능 교통 시스템, 교통 네트워크 복원</span
-                >
-              </li>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_02_crop_auto_fix_600_736.89.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_04_crop_auto_fix_600_810.28.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_05_crop_auto_fix_600_743.04.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_06_crop_auto_fix_600_857.28.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_07_crop_auto_fix_600_810.28.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_08_crop_auto_fix_600_859.95.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_09_crop_auto_fix_600_744.48.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_01_crop_auto_fix_600_853.52.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_02_crop_auto_fix_600_736.89.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_09_crop_auto_fix_600_744.48.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_08_crop_auto_fix_600_859.95.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_07_crop_auto_fix_600_810.28.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_06_crop_auto_fix_600_857.28.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_05_crop_auto_fix_600_743.04.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_01_crop_auto_fix_600_853.52.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_02_crop_auto_fix_600_736.89.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_04_crop_auto_fix_600_810.28.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_02_crop_auto_fix_600_736.89.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_01_crop_auto_fix_600_853.52.png" alt="" />
+              </div>
+              <span class="name">인소영 교수</span>
+              <span class="desc">환경저널리즘, 리스크커뮤니케이션</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_02_crop_auto_fix_600_736.89.png" alt="" />
+              </div>
+              <span class="name">정희태 교수</span>
+              <span class="desc">나노구조, 인공관합성, 광천자 소개</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+            <li class="swiper-slide">
+              <div class="thumb_img">
+                <img src="./img/main/faculty_03_crop_auto_fix_600_804.64.png" alt="" />
+              </div>
+              <span class="name">김인희 교수</span>
+              <span class="desc">지속가능 교통 시스템, 교통 네트워크 복원</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="news_wrap">
+        <div class="container">
+          <h2>News</h2>
+          <div class="news_tab">
+            <!-- 탭메뉴에 링크를 사용하지 않으면 웹접근성을 해칠까요? -->
+            <ul class="tabs">
+              <li class="active">공지사항</li>
+              <li>미디어</li>
+              <li>학술정보</li>
+              <li>교원채용</li>
             </ul>
+            <a href="#" class="news_more">더 많은 소식</a>
           </div>
-        </section>
-        <section class="news_wrap">
-          <div class="container">
-            <h2>News</h2>
-            <div class="news_tab">
-              <!-- 탭메뉴에 링크를 사용하지 않으면 웹접근성을 해칠까요? -->
-              <ul class="tabs">
-                <li class="active">공지사항</li>
-                <li>미디어</li>
-                <li>학술정보</li>
-                <li>교원채용</li>
-              </ul>
-              <a href="#" class="news_more">더 많은 소식</a>
-            </div>
-            <div class="news_contents">
-              <!-- 
+          <div class="news_contents">
+            <!-- 
             게시판의 내용은 DB에서 불러옴
             퍼블리싱 작업할 때는 더미텍스트를 사용하여 레이아웃 코딩을 해야 함.
             포트폴리오에는 진짜 같은 텍스트와 이미지를 사용
           -->
-              <div class="contbox">
-                <h3 class="blind">공지사항</h3>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <span class="news_cate">공지사항</span>
-                      <p>
-                        [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20250110/thumb/1e5471977251c3b2f09332d7b190aab5_crop_auto_fix_627.9_450.png"
-                          alt=""
-                        />
-                      </div>
-                      <span class="news_cate">공지사항</span>
-                      <p>
-                        [KAIST 녹색성장지속가능대학원& Stanford Sustainable
-                        Finance Initiative 공동 주최] 2024년 가을학기
-                        지속가능금융 세미나/ Sustainable Finance Seminar Series
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <span class="news_cate">공지사항</span>
-                      <p>
-                        [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20241007/thumb/1366117bb51f70f8ea5f2b7bd4b00212_crop_auto_fix_600_930.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <span class="news_cate">공지사항</span>
-                      <p>2025학년도 봄학기 교과목 강의일정표</p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="contbox">
-                <h3 class="blind">미디어</h3>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://img.khan.co.kr/news/2023/03/20/news-p.v1.20230320.941544325ff846598ca2551cea0a87df_P1.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <p>
-                        [경향신문] 과학·사회·정책·경영·금융 다 녹여 ‘탄소중립’
-                        인재 키우는 대학원 탄생…카이스트 “세계 최초”
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <p>
-                        [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <p>
-                        [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="contbox">
-                <h3 class="blind">학술정보</h3>
-                <p class="empty_data">등록된 게시물이 없습니다.</p>
-              </div>
-              <div class="contbox">
-                <h3 class="blind">교원채용</h3>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/no/gggs_no_crop_auto_fix_800_450.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <p>
-                        [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="thumb_img">
-                        <img
-                          src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <p>
-                        [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
-                      </p>
-                      <span class="date">2023.05.06</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div class="contbox">
+              <h3 class="blind">공지사항</h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
+                        alt="" />
+                    </div>
+                    <span class="news_cate">공지사항</span>
+                    <p>
+                      [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20250110/thumb/1e5471977251c3b2f09332d7b190aab5_crop_auto_fix_627.9_450.png"
+                        alt="" />
+                    </div>
+                    <span class="news_cate">공지사항</span>
+                    <p>
+                      [KAIST 녹색성장지속가능대학원& Stanford Sustainable
+                      Finance Initiative 공동 주최] 2024년 가을학기
+                      지속가능금융 세미나/ Sustainable Finance Seminar Series
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
+                        alt="" />
+                    </div>
+                    <span class="news_cate">공지사항</span>
+                    <p>
+                      [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20241007/thumb/1366117bb51f70f8ea5f2b7bd4b00212_crop_auto_fix_600_930.jpg"
+                        alt="" />
+                    </div>
+                    <span class="news_cate">공지사항</span>
+                    <p>2025학년도 봄학기 교과목 강의일정표</p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
-        </section>
-        <div class="flow_content_wrap">
-          <div class="flow_content">
-            <img src="/img/main/rolling_img.svg" alt="" />
-            <img src="/img/main/rolling_img.svg" alt="" />
-            <img src="/img/main/rolling_img.svg" alt="" />
-            <img src="/img/main/rolling_img.svg" alt="" />
-          </div>
-        </div>
-        <div class="banner_wrap">
-          <div class="container">
-            <div class="banner_con">
-              <h2 class="blind">입학안내</h2>
-              <div class="txt_box">
-                <p>녹색성장의 미래를 함께 만들어갈 당신을 기다립니다.</p>
-                <p class="txt_big">GGGS와 함께하고 싶으신가요?</p>
-              </div>
-              <div class="progress_wrap">
-                <div class="img_left">
-                  <img src="/img/main/sec06_obj01.png" alt="" />
-                </div>
-                <div class="progress"><div class="bar"></div></div>
-                <div class="img_right">
-                  <img src="/img/main/sec06_obj02.png" alt="" />
-                </div>
-              </div>
-              <a href="#" class="main_link">입학안내</a>
+            <div class="contbox">
+              <h3 class="blind">미디어</h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://img.khan.co.kr/news/2023/03/20/news-p.v1.20230320.941544325ff846598ca2551cea0a87df_P1.jpg"
+                        alt="" />
+                    </div>
+                    <p>
+                      [경향신문] 과학·사회·정책·경영·금융 다 녹여 ‘탄소중립’
+                      인재 키우는 대학원 탄생…카이스트 “세계 최초”
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
+                        alt="" />
+                    </div>
+                    <p>
+                      [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
+                        alt="" />
+                    </div>
+                    <p>
+                      [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contbox">
+              <h3 class="blind">학술정보</h3>
+              <p class="empty_data">등록된 게시물이 없습니다.</p>
+            </div>
+            <div class="contbox">
+              <h3 class="blind">교원채용</h3>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img src="https://gggs.kaist.ac.kr/_files/no/gggs_no_crop_auto_fix_800_450.jpg" alt="" />
+                    </div>
+                    <p>
+                      [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="thumb_img">
+                      <img
+                        src="https://gggs.kaist.ac.kr/_files/board/20250304/thumb/37a7583b492746aafa544b6e8205135e_crop_auto_fix_600_851.4.jpg"
+                        alt="" />
+                    </div>
+                    <p>
+                      [녹색성장지속가능대학원] 2025학년도 가을학기 신입생 모집
+                    </p>
+                    <span class="date">2023.05.06</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </main>
-      <footer id="footer">
+      </section>
+      <div class="flow_content_wrap">
+        <div class="flow_content">
+          <img src="./img/main/rolling_img.svg" alt="" />
+          <img src="./img/main/rolling_img.svg" alt="" />
+          <img src="./img/main/rolling_img.svg" alt="" />
+          <img src="./img/main/rolling_img.svg" alt="" />
+        </div>
+      </div>
+      <div class="banner_wrap">
         <div class="container">
-          <div class="footer_links">
-            <ul class="footer_menu">
-              <li><a href="#">오시는 길</a></li>
-              <li><a href="#">이메일 무단수집거부</a></li>
-              <li><a href="#">개인정보처리방침</a></li>
-            </ul>
-            <div>
-              <div class="family_site">
-                <button>FAMILY SITES <i class="ri-add-fill"></i></button>
-                <!-- ul>li*5>a[target="_blank"]{family} -->
-                <ul>
-                  <li>
-                    <a href="https://gsai.kaist.ac.kr/?lang=ko" target="_blank"
-                      >김재철AI대학원</a
-                    >
-                  </li>
-                  <li><a href="#" target="_blank">디지털인문사회과학부</a></li>
-                  <li><a href="#" target="_blank">문술미래전략대학원</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family family family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family</a></li>
-                  <li><a href="#" target="_blank">family - last</a></li>
-                </ul>
+          <div class="banner_con">
+            <h2 class="blind">입학안내</h2>
+            <div class="txt_box">
+              <p>녹색성장의 미래를 함께 만들어갈 당신을 기다립니다.</p>
+              <p class="txt_big">GGGS와 함께하고 싶으신가요?</p>
+            </div>
+            <div class="progress_wrap">
+              <div class="img_left">
+                <img src="./img/main/sec06_obj01.png" alt="" />
               </div>
-              <div class="footer_sns">
-                <!-- a[target="_blank"]*4>span.blind -->
-                <a href="#" target="_blank">
-                  <span class="blind">유튜브</span>
-                  <i class="ri-youtube-fill"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <span class="blind">인스타그램</span>
-                  <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <span class="blind">트위터 엑스</span>
-                  <i class="ri-twitter-x-fill"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <span class="blind">페이스북</span>
-                  <i class="ri-facebook-circle-fill"></i>
-                </a>
+              <div class="progress">
+                <div class="bar"></div>
+              </div>
+              <div class="img_right">
+                <img src="./img/main/sec06_obj02.png" alt="" />
               </div>
             </div>
-          </div>
-          <div class="corp_info">
-            <a href="#">
-              <img
-                src="/img/common/logo.svg"
-                alt="카이스트 녹색성장지속가능대학원"
-              />
-            </a>
-            <address>
-              34141 대전광역시 유성구 대학로 291 한국과학기술원(KAIST) N5빌딩,
-              2129호
-              <br class="mo" />
-              <span>TEL</span> 042-350-4162~4
-              <span>E-mail</span> gggs@kaist.ac.kr
-            </address>
-            <p class="copyright">
-              &copy; 2023. KAIST &middot; GGGS. ALL RIGHT RESERVED.
-            </p>
-            <!-- entity code -->
+            <a href="#" class="main_link">입학안내</a>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer_links">
+          <ul class="footer_menu">
+            <li><a href="#">오시는 길</a></li>
+            <li><a href="#">이메일 무단수집거부</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+          <div>
+            <div class="family_site">
+              <button>FAMILY SITES <i class="ri-add-fill"></i></button>
+              <!-- ul>li*5>a[target="_blank"]{family} -->
+              <ul>
+                <li>
+                  <a href="https://gsai.kaist.ac.kr/?lang=ko" target="_blank">김재철AI대학원</a>
+                </li>
+                <li><a href="#" target="_blank">디지털인문사회과학부</a></li>
+                <li><a href="#" target="_blank">문술미래전략대학원</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family family family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family</a></li>
+                <li><a href="#" target="_blank">family - last</a></li>
+              </ul>
+            </div>
+            <div class="footer_sns">
+              <!-- a[target="_blank"]*4>span.blind -->
+              <a href="#" target="_blank">
+                <span class="blind">유튜브</span>
+                <i class="ri-youtube-fill"></i>
+              </a>
+              <a href="#" target="_blank">
+                <span class="blind">인스타그램</span>
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="#" target="_blank">
+                <span class="blind">트위터 엑스</span>
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a href="#" target="_blank">
+                <span class="blind">페이스북</span>
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="corp_info">
+          <a href="#">
+            <img src="./img/common/logo.svg" alt="카이스트 녹색성장지속가능대학원" />
+          </a>
+          <address>
+            34141 대전광역시 유성구 대학로 291 한국과학기술원(KAIST) N5빌딩,
+            2129호
+            <br class="mo" />
+            <span>TEL</span> 042-350-4162~4
+            <span>E-mail</span> gggs@kaist.ac.kr
+          </address>
+          <p class="copyright">
+            &copy; 2023. KAIST &middot; GGGS. ALL RIGHT RESERVED.
+          </p>
+          <!-- entity code -->
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
